@@ -4,15 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .reformer, .cadillac, .chair, .barrel {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .list-btn button {
+            margin: 10px;
+        }
+    </style>
 </head>
 <body>
-    <div>
+    <div style="margin-left: 20px;margin-top: 60px; margin-bottom: 20px;" class="list-btn">
         <button class="reformer">Reformer</button>
         <button class="cadillac">Cadillac</button>
         <button class="chair">Chair</button>
         <button class="barrel">Barrel</button>
     </div>
-    <div class="result" style="font-size:2rem;">결과 : <span></span></div>
+    <div class="result" style="font-size:2rem; margin-left: 20px;">결과 : <span></span></div>
     <script>
         const reformerBtn = document.querySelector('.reformer');
         const cadillacBtn = document.querySelector('.cadillac');
