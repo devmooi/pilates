@@ -16,6 +16,7 @@
 </head>
 <body>
     <div style="margin-left: 20px;margin-top: 60px; margin-bottom: 20px;" class="list-btn">
+        <button class="mat">Mat</button>
         <button class="reformer">Reformer</button>
         <button class="cadillac">Cadillac</button>
         <button class="chair">Chair</button>
@@ -27,8 +28,15 @@
         const cadillacBtn = document.querySelector('.cadillac');
         const chairBtn = document.querySelector('.chair');
         const barrelBtn = document.querySelector('.barrel');
+        const matBtn = document.querySelector('.mat');
 
         const resultText = document.querySelector('.result span');
+
+        matBtn.addEventListener('click', function() {
+            const matList = ['curl up', 'hundred', 'single leg circle', 'single leg strtch', 'scissors', 'criss corss', 'double leg stretch', 'double leg & lift', 'roll up', 'teaser prep', ' teaser', 'shoulder bridge', 'roll over', 'spine stretch forward', 'spine roll back', 'spine lean back', 'roll down', 'rolling like A ball', 'hip circles', 'spine twist', 'saw', 'mermaid with rotation', 'side bend mermaid prep', 'side kick keeling', 'swimming prep', 'swimming', 'side leg sereies(ab)', 'side leg series(ad)', 'side leg series(knee open)', 'side leg series(side kick prep)', 'breast stroke prep', 'breast stroke prep(hands by shulder)', 'breast stroke prep(hands by hip)', 'breast stroke prep(hands by head)', 'breast stroke', 'slow swan', 'spine release', 'single leg extension', 'double leg extension', 'hamstring curl', 'heel squeeze', 'leg full front prep', 'leg full front', 'leg full up', 'push up', 'plank']
+            const selectedMat = matList[Math.floor(Math.random() * matList.length)]
+            resultText.innerHTML = selectedMat;
+        });
 
        
 
