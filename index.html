@@ -6,6 +6,49 @@
     <title>Document</title>
 </head>
 <body>
-    TEST
+    <div>
+        <button class="reformer">Reformer</button>
+        <button class="cadillac">Cadillac</button>
+        <button class="chair">Chair</button>
+        <button class="barrel">Barrel</button>
+    </div>
+    <div class="result" style="font-size:2rem;">결과 : <span></span></div>
+    <script>
+        const reformerBtn = document.querySelector('.reformer');
+        const cadillacBtn = document.querySelector('.cadillac');
+        const chairBtn = document.querySelector('.chair');
+        const barrelBtn = document.querySelector('.barrel');
+
+        const resultText = document.querySelector('.result span');
+
+       
+
+        barrelBtn.addEventListener('click', function() {
+           
+               const barrelList = ['Spine Twist', 'Round Back', 'Flat Back', 'Round Back with Twist', 'Lean', 'Tree Prep', 'Side Bend', 'Swan', 'Spinal Extension', 'Scissors','Bicycle', 'Leg Lower & Lift', 'Horse', 'Prone Exercise Series', 'Grasshopper', 'Ballet Stretch']
+               const selectedBarrel = barrelList[Math.floor(Math.random() * barrelList.length)]
+          
+            
+            resultText.innerHTML = selectedBarrel;
+        })
+
+        reformerBtn.addEventListener('click', function() {
+            const reformerList = ['Footwork', 'Ankle Exercise', 'Running', 'Hip Rolls', 'Single Leg Footwork', 'Stomach Massage', 'Mermaid', 'Reach & Bend', 'Lower & Lift', 'Adductor Stretch', 'Leg Circle', 'Stag', 'Short Spine Prep', 'Short Spine', 'Long Spine', 'Mid-Back Series', 'Coordination', 'Back Rowing Series Prep', 'Sitting Arm Forward Footbar Series', 'Chest Expansion', 'Kneeling Arm Forward Footbar Series', 'Knee Stretch', 'Elephant', 'Prone Arm Series', 'Back Rowing Series', 'Front Rowing Series', 'Long Stretch', 'Turtle', 'Single Thigh Stretch', 'Side Split']
+            const selectedReformer = reformerList[Math.floor(Math.random() * reformerList.length)]
+          resultText.innerHTML = selectedReformer;
+        })
+
+        cadillacBtn.addEventListener('click', function() {
+            const cadillacList = ['Spread Eagle Prep', 'Push-thru on Back with Roll Up','Sit up Combo', 'Teaser', 'Push-thru on Stomach with Back Extension', 'Leg Press', 'Guillotine', 'Monkey', 'Push Thru Cat Spine Stretch', 'Lat Press', 'Roll Down', 'Airplain Prep', 'Breathing', 'Push-thru with Feet', 'Spread Eagle', 'Pull Up', 'Ballet Stretch']
+            const selectedCadillac = cadillacList[Math.floor(Math.random() * cadillacList.length)]
+resultText.innerHTML = selectedCadillac;
+        })
+        chairBtn.addEventListener('click', function() {
+            const chairList = ['Footwork', 'Sitting Ankle Exercise', 'Standing Ankle Exercise', 'Running', 'Lying Leg Press', 'Lying Leg Press with Articulation', 'Lying Frog Leg Press', 'AB Press Sitting', 'Roll Over', 'Tendon Stretch', 'Cat Spine Standing Front', 'Single Leg Standing', 'Step Up', 'Spine Press on Chair Prep', 'Rotation Prone', 'Slow Swan']
+            const selectedChair = chairList[Math.floor(Math.random() * chairList.length)]
+            resultText.innerHTML = selectedChair;
+        })
+    </script>
+
 </body>
 </html>
