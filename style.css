@@ -1,0 +1,22 @@
+body {
+  text-align: center;
+  padding-top: 30px;
+}
+button {
+  background: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  margin: 5px;
+  padding: 12px 8px;
+}
+li:nth-of-type(1) {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 30px;
+}
+li {
+  list-style: none;
+  line-height: 2.2rem;
+  font-size: 1.2rem;
+}
